@@ -1,0 +1,356 @@
+
+/*@font-face {
+	font-family: 'Lane';
+	src: url('YourWebFontName.eot?') format('eot');/*IE*/
+/*	src: url('https://wiffinity.com/public/v2/fonts/lanenar_Lane.woff') format('woff'), url('YourWebFontName.ttf') format('truetype');
+   }*/
+@font-face{ 
+	font-family: 'Lane';
+	src: url('../fonts/LANENAR_-webfont.eot');
+	src: url('../fonts/LANENAR_-webfont.eot?iefix') format('eot'),
+	     url('../fonts/LANENAR_-webfont.woff') format('woff'),
+	     url('../fonts/LANENAR_-webfont.ttf') format('truetype'),
+	     url('../fonts/LANENAR_-webfont.svg#webfont') format('svg');
+}
+body{
+	font-family: 'open sans','simSun','Helvetica Neue','Helvetica','Arial',sans-serif;
+	font-size: 16px;
+	text-align: justify;
+}
+#topnav.affix{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 1;
+}
+#topnav.affix .navbar-brand{
+	color: rgb(52,73,93);
+
+}
+#topnav.affix li a{
+	color: #333;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+    color: #555;
+    background-color: rgba(119, 119, 119, 0.1);
+}
+#topnav{
+/*	background-color: transparent;
+*/	border: none;
+	border-radius: 0px;
+	transition:all 0.75s;
+	-moz-transition:all 0.75s; /* Firefox 4 */
+	-webkit-transition:all 0.75s; /* Safari and Chrome */
+	-o-transition:all 0.75s; /* Opera */
+
+}
+#topnav .container-fluid{
+	padding-right: 6%;
+	padding-left: 6%;
+	
+}
+#topnav .navbar-right li a{
+	padding-top: 30px;
+	font-family: 'open sans';
+}
+#topnav .navbar-brand{
+	font-size: 28px;
+	font-family: 'PT Mono';
+	color: #485B6D;
+	
+}
+@media screen and (min-width: 750px) {
+    #topnav .navbar-brand{
+        padding-top: 30px;
+    }
+}
+#topnav ul li a{
+	font-size: 16px;
+	color: #333;
+}
+#topnav ul li.open a{
+	color: #333;
+}
+
+
+
+header {
+	background-size: cover;
+	z-index: -1;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+}
+/*.bg-mask{
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0, rgba(0,0,0,0.6) 100%);
+}*/
+header .intro h1.slogan{
+	color: #333;
+	font-family: 'Lane','simSun';
+	margin-bottom: 15px
+}
+header .intro h2{
+	font-family: 'Lane','simSun';
+	/*color: #fff;*/
+	color: rgba(255,255,255,0.8);
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+header .intro h3{
+	font-family: 'Lane','simSun';
+	/*color: #fff;*/
+	color: rgba(255,255,255,0.9);
+	margin-top: 10px;
+	margin-bottom: 40px
+}
+header .intro a.btn-default:link {
+	font-size: 16px;
+	padding: 14px 30px;
+    color: #fff;
+    background-color: transparent;
+    border-color: rgb(114, 114, 114);
+}
+header .intro a.btn-default:visited {
+	color: #fff;
+	border-color: rgb(114, 114, 114);
+}
+header .intro a.btn-default:hover {
+	border-color: #fff;
+}
+
+.whats-renren {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: none;
+	margin-bottom: 30px;
+}
+.whats-renren h3{
+	margin: 0 auto;
+/*	font-family: 'open sans light';
+*/	font-weight: 300;
+	color: #fff;
+	width: 130px;
+	height: 130px;
+	background-color:  rgba(52,73,93,0.9);
+	display: block;
+	margin-bottom: 35px;
+	border-radius: 65px;
+	border:1px solid #34495D;
+}
+.whats-renren p em{
+	color: #34495D;
+} 
+.whats-renren h4{
+	font-family: 'open sans','simSun';
+/*	color: rgb(119, 119, 119);*/	
+	margin-bottom: 35px;
+}
+.whats-renren a.btn-default:link {
+	font-size: 16px;
+	padding: 14px 30px;
+
+}
+.whats-renren h4 em{
+	font-style: normal; 
+	color: #97073E;
+}
+.what-we-do{
+	padding-top: 30px;
+	padding-bottom: 35px;
+	background: #F4F4F4;
+}
+.what-we-do h2{
+	font-family: 'Condiment';
+	font-size: 38px;
+	margin-bottom: 22px;
+	color: #97073E;
+}
+.what-we-do h2{
+	font-family: 'Condiment';
+	font-size: 38px;
+	margin-bottom: 22px;
+	color: #97073E;
+}
+.what-we-do i{
+	color: #34495D;
+}
+.what-we-do p{
+	font-family: 'open sans','simSun';
+	color: rgb(119, 119, 119);
+	font-size: 16px;
+	line-height: 23px;
+}
+.what-we-have{
+	/*padding-top: 30px;*/
+	padding-bottom: 35px;
+	background: none;
+}
+.what-we-have h3{
+/*	font-family: 'PT Mono';*/
+	color: rgb(119, 119, 119);
+}
+.what-we-have h2{
+	font-family: 'Merriweather';
+	font-size: 38px;
+	margin-bottom: 22px;
+	color: #97073E;
+}
+.what-we-have .table{
+	margin-bottom: 50px;
+}
+.what-we-have .table > tbody > tr > td{
+	border-top: none;
+}
+.what-we-have .table > tbody > tr > td.rank{
+	width: 10%;
+} 
+.what-we-have .table > tbody > tr > td.rank span{
+	  display: block; 
+	  margin-left: auto; 
+  	  margin-right: auto;
+	  width: 20px;
+	  height: 20px; 
+	  border-radius: 10px; 
+	  background-color: #CD5C5C;
+	  color:#fff;
+}
+.what-we-have .table tr td.rank{
+	width: 10%;
+} 
+.what-we-have .table tr td.school{
+	width: 30%;
+} 
+.what-we-have .table tr td p{
+	 display: block;
+	 height: 20px;
+	 
+	 background-color: #CD5C5C;
+}
+
+.what-we-have .act_rank .table > tbody > tr > td.rank span{
+	background-color: #4682B4;
+}
+.what-we-have .act_rank .table tr td p{
+	background-color: #4682B4;
+}
+.more-mood-keywords{
+	margin-bottom: 30px;
+}
+.more-mood-keywords h4{
+	margin-bottom: 20px;
+}
+.more-mood-keywords a{
+	cursor: pointer;
+	padding: 5px 7px;
+	background-color: #FFE4E1;
+	color: #8B2252;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.more-mood-keywords a.activeMoodKeyword{
+	background-color: #8B2252;
+	color: #fff;
+}
+
+.more-act-keywords{
+	margin-bottom: 30px;
+}
+.more-act-keywords h4{
+	margin-bottom: 20px;
+}
+.more-act-keywords a{
+	cursor: pointer;
+	padding: 5px 7px;
+	background-color: #D9E8F4;
+	color: #34495D;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.more-act-keywords a.activeActKeyword{
+	background-color: #34495D;
+	color: #fff;
+}
+.latest-status h4{
+	margin-bottom: 26px;
+}
+.latest-status .media{
+	margin-bottom: 20px;
+}
+.latest-status .media .media-left .avatar-bg{
+	padding: 10px;
+	background-color: #F5F4F0;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.latest-status .media .media-body .media-heading{
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+#tech-facts {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	background: #F4F4F4;
+}
+
+#tech-facts h2{
+	font-size: 38px;
+	margin-bottom: 30px;
+	font-family: 'Merriweather';
+}
+#tech-facts h3{
+	margin-top: 38px;
+	margin-bottom: 30px;
+}
+#tech-facts h4{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#tech-facts p{
+	font-size: 18px;
+}
+#tech-facts p.classIntro{
+	padding-left: 2%;
+}
+
+
+footer {
+    background: #1f2432;
+    padding: 90px 0;
+    color: #fff;
+}
+footer h3{
+	font-family: 'PT Mono'
+}
+footer a:link{
+	color: #fff;
+}
+footer a:visited{
+	color: #fff;
+}
+footer a:hover{
+
+}
+footer h3{
+	margin: 0 0 20px;
+}
+footer p.mute{
+	opacity: .75;
+}
+footer small{
+	display: block;
+	opacity: .5;
+	margin: 30px 0 0;
+}
+footer ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li{
+	display: inline;
+}

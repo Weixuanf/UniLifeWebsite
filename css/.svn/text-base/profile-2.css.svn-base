@@ -1,0 +1,179 @@
+@font-face{ 
+	font-family: 'Lane';
+	src: url('../fonts/LANENAR_-webfont.eot');
+	src: url('../fonts/LANENAR_-webfont.eot?iefix') format('eot'),
+	     url('../fonts/LANENAR_-webfont.woff') format('woff'),
+	     url('../fonts/LANENAR_-webfont.ttf') format('truetype'),
+	     url('../fonts/LANENAR_-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+	font-family: 'Gill';
+	src: url('../fonts/') format('eot'),
+	     url('../fonts/') format('woff'),
+	     url('../fonts/Gill Sans MT Condensed.ttf') format('truetype'),
+	     url('../fonts/') format('svg');
+}
+@font-face{ 
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf.eot') format('eot'),
+	     url('../fonts/Lato-Light.ttf.woff') format('woff'),
+	     url('../fonts/Lato-Light.ttf') format('truetype'),
+	     url('../fonts/Lato-Light.ttf.svg') format('svg');
+}
+html, body{
+	font-family: 'open sans';
+	height:100%;
+	font-size: 16px;
+}
+.profile{
+	background-color: #FFF;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	height: 100%;
+}
+.profile .avatar{
+	width: 70%;
+	margin: 0 auto;
+}
+.profile h1{
+	font-family: 'Lane';
+	font-size: 38px;
+	margin-bottom: 40px;
+/*	padding-right: 50%;
+	padding-left: 50%;*/
+}
+.profile p{
+	padding: 0 5%;
+}
+.profile h5{
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+.profile i{
+/*	margin-right: 5px;*/
+}
+.profile p a{
+	color: 
+}
+.profile table td{
+	padding-right: 24px;
+	padding-bottom: 10px;
+}
+.owl-carousel {
+	margin-bottom: 40px;
+}
+.owl-carousel .item h5{
+	font-size: 16px;
+	
+}
+.owl-carousel .item hr{
+	max-width: 50px;
+border-color: #2EA9D3;
+border-width: 3px;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+border-top: 1px solid #838383;
+}
+.owl-carousel .item p{
+	width: 87%;
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-family: 'Merriweather'
+}
+.owl-carousel .item a{
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #408080;
+	display: block;
+}
+.cv{
+	padding-top: 60px ;
+	padding-bottom: 80px;
+	background-color: #F1F1F1;
+
+}
+.cvinside{
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	padding-top: 20px;
+	margin-bottom: 50px;px;
+}
+@media screen and (min-width: 750px) {
+    .cvinside{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+.cvtitle .circleOut{
+	width: 34px;
+	height: 34px;
+	border-radius: 17px;
+	background-color: rgba(149,55,53,0.4);
+	padding-top: 7px;
+	float: left;
+	margin-right: 10px;
+/*	margin-top: 6px;*/
+/*	opacity: 0.4;*/
+}
+.cvtitle .circleIn{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #953735;
+}
+.cvtitle span{
+	font-size: 28px;
+	font-family: 'Lane';
+	overflow: hidden;
+}
+.cv .unilife {
+	margin-bottom: 30px;
+}
+.cv .unilife h2{
+	font-family: 'PT Mono';
+	color: #485B6D; 
+	font-size: 40px;
+	margin-bottom: 26px;
+}
+.cv .unilife p{
+	font-size: 16px;
+	font-family: 'Lato-Light';
+/*	text-align: justify;*/
+/*	padding-left: 4px;
+	padding-right: 4px;*/
+}
+.cv .huanxing{
+	margin-bottom: 30px;
+}
+.cv .huanxing h2{
+	font-family: 'simSun','open sans';
+	 font-size: 35px; 
+	 color: #777;
+
+	 margin-bottom: 26px;
+}
+.cv .huanxing p{
+	font-size: 16px;
+	font-family: 'Lato-Light';
+}
+.cv .cvbody{
+	padding-left: 2%;
+	margin-bottom: 30px;
+}
+.cv .cvbody h3{
+	font-family: 'Gill';
+	font-size: 26px;
+	margin-top: 10px;
+}
+.cv .cvbody table{
+	font-size: 16px;
+}
+.cv .cvbody table td{
+	padding-right: 24px;
+	padding-bottom: 10px;
+}
+.cv .cvbody p{
+	font-size: 16px;
+	margin-bottom: 15px;
+}

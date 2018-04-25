@@ -1,0 +1,5 @@
+name: unilife
+version: 2
+
+handle:
+- directoryindex: index.html

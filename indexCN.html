@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>UniLife-China a big data project to let you know more about university life in China</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bootstrap/js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入在线谷歌字体库 -->
+    <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Merriweather'>             
+    <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Open Sans'>        
+    <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Open Sans Light'>       
+    <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=PT Mono'>          
+    <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Condiment'>
+    <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Lato Hairline'>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/nav.js"></script>
+    
+  </head>
+  <body data-spy="scroll" data-target="#topnav">
+
+    <header id="page-top">
+        <nav id="topnav" class="navbar navbar-default" >
+          <div class="container-fluid" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top"><b>UniLife</b> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <!-- <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                
+              </ul> -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#one">开始了解</a></li>
+                <li><a href="#two">研究内容</a></li>
+                <li><a href="#three">校园氛围排行</a></li>
+                <li><a href="#tech-facts">技术细节</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LANGUAGE <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html">English</a></li>
+                    <li><a href="indexCN.html">中文</a></li>
+                  </ul>
+                </li> 
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+          
+        </nav>
+        <div class="container intro" style="width: 70%">
+          <h1 class="text-center slogan" >
+            中国社交网络的信息爬取与大数据挖掘
+          </h1>
+          <h2 class="text-center">
+            幸福感最高的中国高校有哪些<br>
+            最有运动氛围的中国高校有哪些？
+          </h2>
+          <<!-- h2 class="text-center">
+            <span style="color: #97073E">30000+</span> data
+            <span style="color: #97073E">1000+</span> schools
+          </h2> -->
+          <h3 class="text-center">
+            挖掘与分析最受欢迎的校园社交网络人人网<i class="fa fa-renren fa-lg"></i> Renren.com
+          </h3>
+          <div class="text-center">
+            <a class="btn btn-default" target="_blank"  href="uniResults.html" role="button" style="margin-right: 10px;">各高校研究结果</a> 
+            <a class="btn btn-default" target="_blank" href="https://github.com/Weixuanf/UniLife-China" role="button">在GitHub中查看</a>
+          </div>
+          
+        </div>
+    </header>
+    <div id="one" class="whats-renren">
+      <div class="container"  style="width: 90%">
+      <div class="row">
+        <div class="col-lg-5 col-md-5">
+          <h3 class="text-center" >
+           <br>开始 <br>了解<span  style="font-family: 'PT Mono'"></span><br><small><i style="color: #fff" class="fa fa-heart"></i></small> 
+          </h3>
+          
+          
+          <h4 >
+             互联网正逐渐成为人们生活中的一部分，也越来越能够反映人们的想法、生活状态，而社交网络尤其具有代表性。在现代社会，查看社交网络主页甚至成为了人们了解一个人首要选择的途径。对社交网络的海量信息进行数据挖掘与分析也是当下一个必然的趋势。
+             <br><br>
+             1. 通过网络爬虫，获取人人网新鲜事/状态关键字搜索结果，将海量信息存入数据库<br>
+2. 通过对状态关键字搜索结果的数据分析，得到各关键词提到频率的学校排名<br>
+3. 通过对社交网络中学生发布的新鲜事或微博的词频统计，深入挖掘中国各高校学生生活状态，如学业压力、娱乐生活等<br>
+4. 通过社交网络用户档案分析，得到各高校学生的基本构成，比如男女比例，各地域比例，毕业去向分析，比如进入各研究所或工作单位比例
+
+
+          </h4>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-md-offset-1">
+          <p class="text-muted" style="line-height: 1.1;"><em>Renren (人人)</em> 是目前规模最大的<em>校园社交网络</em>
+             它是学生主要的校园信息发布与获取的渠道。在移动互联的时代，每个人不仅是浏览者更是互联网内容的贡献者，每天上亿的信息与内容在互联网上传播与发布。
+          </p> <br>
+          <img src="images/timeline.JPG" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+        
+      </div>
+      
+      
+    </div>
+    
+    <div id="two" class="what-we-do ">
+      <h2 class="text-center">
+         研究内容
+      </h2>
+      <div class="container text-center"  style="width: 80%">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3><i class="fa fa-bug fa-2x"></i></h3>
+            <h3>数据获取</h3>
+            <p>数据源：人人或者微博上发布的新鲜事<br>
+            技术：网络爬虫或网站API
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3><i class="fa fa-database fa-2x"></i></h3>
+            <h3>数据存储</h3>
+            <p>数据库：MySQL<br>
+            技术：MySQL数据库设计与管理
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3><i class="fa fa-sort-amount-desc fa-2x"></i></h3>
+            <h3>数据挖掘</h3>
+            <p>自然语言处理（分词）、
+            词频统计、
+            用户档案分析
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3><i class="fa fa-pie-chart fa-2x"> </i></h3>
+            <h3>数据可视化</h3>
+            <p>通过网页的方式将分析结果简明的呈现出来，采用饼状图、柱状图等
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+      
+    </div>
+
+    <!-- CAMPUS MOOD RANK -->
+    <div id="three" class="what-we-have ">
+      <h3 class=" text-muted text-center">
+        现有数据分析结果
+      </h3>
+      <h2 class="text-center">
+         校园情绪排行
+         <br>
+         <small  style="font-family: 'Times New Roman'"><em></em></small>
+      </h2>
+        <!-- <h3 style="font-family: 'Times New Roman'"><em>of universities in China</em></h3> -->
+      <div class="mood_rank container"  >
+        <div class="row">
+          <div id="mood-rank-div" class="col-lg-6 col-md-6 text-center">
+            <h3>The happiest university</h3>
+            <h4 style="font-family: 'Merriweather'">keyword <mark>happy</mark> mentioned most frequently</h4> <br>
+
+          </div>
+          <div class="col-lg-5 col-md-5 col-md-offset-1 ">
+            <h4 class="text-muted" style="font-size: 16px;">人人网提供强大的搜索功能，可以搜索用户、状态、分享等内容。利用搜索功能，按关键字搜索用户发布的状态，再逐条访问发布者的用户档案得到其学校等开放个人信息，将状态与发布者的学校进行匹配，存储入数据库中
+  </h4> <br>
+            <div class="more-mood-keywords">
+              <h4>More Mood Keywords</h4>
+              <a class="activeMoodKeyword" id="stressful" >压力大</a> 
+              <a id="boring">无聊</a> 
+              <a id="homesick" >想家</a> 
+              
+              <a id="insomnia" >失眠</a> 
+              <a id="lonely" >孤独</a> 
+              <a id="anxious" >焦虑</a> 
+              <a id="happy" >开心</a>
+            </div>
+
+            <div class="latest-status">
+              <h4>Related Status </h4>
+              <div id="mood-status-div"></div>
+            </div>
+            
+          </div>
+          
+        </div>
+
+      </div>   
+
+
+      <h2 style="color: rgb(52,73,93);" class="text-center">
+         校园生活方式排行
+         <br>
+         <small style="font-family: 'Times New Roman'"><em></em></small>
+      </h2>
+      <div class="act_rank container">
+        <div class="row">
+          <div id="act-rank-div" class="col-lg-6 col-md-6 text-center">
+          </div>
+          <div class="col-lg-5 col-md-5 col-md-offset-1">
+            <h4 class="text-muted">
+            
+            </h4> <br>
+            <div class="more-act-keywords">
+              <h4>More Lifestyle Keywords</h4>
+              <a id="go_to_the_gym" class="activeActKeyword">健身</a>
+              <a id="study">自习</a> 
+              <a id="stay_up_late" >熬夜</a> 
+              <a id="party" >聚会</a> 
+
+          </div>
+
+          <div class="latest-status">
+              <h4>Related Status </h4>
+              <div id="act-status-div"></div>
+          </div>
+          
+        </div>
+
+      </div>  
+      
+    </div>
+    </div>
+
+    <div id="tech-facts" >
+    <div class="container" style="width: 88%">
+      <h2>技术细节</h2>
+      <h3>人人网模拟登陆方法的实现</h3>
+      <h4 class="text-muted">由于人人网许多页面(比如用户新鲜事与用户档案等)都需要登录后才能查看，所以需要使用JAVA程序发送http请求模拟登陆人人网获取cookie后再爬取所需信息。
+</h4>
+      <div class="row">
+        <div class="col-md-5">
+          <p>为了分析登陆人人网所需发送的Http请求具体消息头，使用网络监视器软件监视Http请求。<br>分析出登陆人人网的http请求的方法是POST方法，请求的消息正文的表单域与对应参数也都可以看到。
+          </p>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <img src="images/login.jpg" class="img-responsive">
+        </div>
+      </div>
+      
+
+      <h3>程序主要类与方法介绍 </h3>
+      <h4 style="margin-bottom: 10px;"><i class="fa fa-folder-open"></i> Renren Analyze package  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="text-muted">爬取与分析人人网数据</span>  </h4>
+      <p class="classIntro" >
+         <i class="fa fa-angle-right"></i>  CrawlSearchedStatus.java   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+         <span class="text-muted">爬取状态关键字搜索出来的用户的资料并访问其个人主页获取就读信息与居住地信息</span> 
+      </p>
+      <p class="classIntro" >
+          <i class="fa fa-angle-right"></i>  RenrenSpider.java   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="text-muted">人人httpclient爬虫：模拟登陆，爬取页面的源代码数据</span> 
+      </p>
+      <p class="classIntro" >
+          <i class="fa fa-angle-right"></i>  dbhelper.java   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="text-muted"> 操作MySQL数据库的相关处理，连接查插改删等方法</span> 
+      </p>
+      <p class="classIntro" >
+          <i class="fa fa-angle-right"></i>  RenrenStats.java   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="text-muted">
+           数据分析与挖掘等统计操作-Statistic methods to analyze data
+          </span> 
+      </p>
+      <h4><i class="fa fa-folder-open"></i> SwingGUI package  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="text-muted">为程序添加GUI交互界面</span>  </h4>
+
+      <h3>爬虫初始化</h3>
+      <h4 class="text-muted">爬虫变量设置</h4>
+      <pre style="background-color: #fff; ">
+  /**txt file path of Renren account username and password to log-in*/
+  String accountsFilePath = "D:/Renren/account.txt";
+  /**the start page number of crawling target */
+  int offset = 9420; 
+  /**keyword of timeline statuses to crawl in English*/
+  String tableName = "party";
+  /**keyword of timeline statuses to crawl in Chinese*/
+  String keyword = "聚会"; 
+  /**the start proxy host to use*/
+  int proxyIndex=9; 
+  /**if need proxy host to crawl at beginning*/
+  boolean needProxy = false;
+  /**pause time (in seconds) after every crawl*/
+  double sleepSec = 0.5;
+      </pre>
+
+      <h3>反爬应对机制</h3>
+      <h4 class="text-muted">由于爬虫频繁请求网站资源，各个网站都会有一些对付爬虫的反爬机制，所以要使自己的爬虫突破封锁，保证长时间顺畅运行则必须要有完善的反爬应对机制。 </h4>
+      <h4 style="margin-bottom: 10px;"><i class="fa fa-coffee"></i> 在两次爬取间加入一定时间间隔  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      </h4>
+      <span class="text-muted">过于频繁的Http请求可能会遭到封锁IP地址。因此要保证两次爬取间的时间间隔不小于一定值，不然可能会被识别出来为爬虫。使用Thread.sleep()在程序间加入时间间隔。</span>  
+      <h4 style="margin-bottom: 10px;"><i class="fa fa-user-secret"></i> 更换IP地址与登陆账号访问资源   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+       </h4>
+       <span class="text-muted">在一定次数的爬取后，使用代理服务器更换IP地址以及更换账号登陆人人网继续爬取资源，降低被检测出来的风险。</span> 
+       <h4 style="margin-bottom: 10px;"><i class="fa fa-edge"></i> 伪装成浏览器    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+       </h4>
+       <span class="text-muted">为了使爬虫不被识别出来，首先要做的就是模仿浏览器的浏览，不被检测出来是JAVA程序发出的Http请求。因此，设置Http请求的参数、消息头，使Http请求看起来更像是浏览器发出的。比如，设置Http POST方法的请求头user agent参数为火狐浏览器。</span> 
+    </div>
+      
+
+
+
+    </div>
+
+    <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-5 col-md-offset-1 ">
+                        <h3>UniLife</h3>
+                        <p class="mute">Developed by Weixuan Fu  2016</p>
+                        <p><a href="mailto:weixuanf@outlook.com"><i class="fa fa-envelope-o fa-lg"></i> weixuanf@outlook.com</a></p>
+                        <p><a href="https://github.com/Weixuanf"  target="_Blank"><i class="fa fa-github fa-lg"></i> Weixuanf</a></p>
+                        <small></small>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-offset-1">
+                        <p class="mute" style="margin-bottom: 30px;">A Big Data project to let you know more about university life in China. Based on China's most popular campus social network Renren.com  </p>
+                        <p style="opacity: 0.5">Go Back To</p>
+                        <ul>
+                            <li><a href="#one">GET STARTED</a> <b> &nbsp;· &nbsp;</b> </li> 
+                            <li><a href="#two">WHAT WE DO</a> <b> &nbsp;· &nbsp;</b></li> 
+                            <li><a href="#three">CAMPUS MOOD&LIFESTYLE RANK</a><b> &nbsp;· &nbsp;</b></li> 
+                            <li><a href="#four">TECH FACTS</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+
+</div>
+    
+  </body>
+</html>
